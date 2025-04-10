@@ -2,7 +2,7 @@
 
 ## General
 
-*Saga of the Viking Seafarer* is an online role-playing game starting in chapter 1 on the mysterious "Dune Island," inspired by the German island of Amrum. The island serves as a strategic stop for the Vikings on their journeys to Ireland and is situated near the Eider and Treene rivers, crucial for trading goods with the prominent settlement of Hedeby. The north of the island features a Viking village, bustling with activity and preparation for journeys.
+*Saga of the Viking Seafarer* is an online role-playing game starting in chapter 1 on the mysterious "Dune Island", inspired by the German island of Amrum. The island serves as a strategic stop for the Vikings on their journeys to Ireland and is situated near the Eider and Treene rivers, crucial for trading goods with the prominent settlement of Hedeby. The north of the island features a Viking village, bustling with activity and preparation for journeys.
 
 The adventure begins as the main character awakes in the fishing village of Stoneholm (Steenodde), located in the southeast of the island. The character has no recollection of past events and is found by a kind fisherman who rescued him from the sea and offered shelter until recovery. As the story unfolds, players enjoy the freedom to chart their own course in this intricate world filled with quests and alliances.
 
