@@ -1,0 +1,7 @@
+- pliers
+- blacksmith's hammer
+- fishing net & angel
+- antler/wood clamps
+- pan / pot
+- ox-drawn carriage / horse-drawn carriage
+- torch (light)

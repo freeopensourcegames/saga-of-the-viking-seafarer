@@ -19,20 +19,21 @@ The protagonist awakens in Stoneholm, amidst the gentle community of fishermen o
 The island offers diverse communities and interactions, including:
 
 - **Stoneholm**: Fishermen's village where the journey begins.
-- **Militia Camp**: Located north of Stoneholm, housing the island's defenders.
+- **Militia Camp**: Located between Stoneholm and Fogbury, housing the island's defenders.
 - **Fogbury**: Central village notable for its bustling marketplace, wealthy merchants.
 - **Monastery of the Water Mages**: Next to Fogbury, always one mage on the marketplace and one at the church.
-- **Large Farmers**: Cultivate lands in the island's northern expanse.
+- **Large Farmers**: Cultivate lands in the north of the island. Some mercenaries living there.
 - **Monastery of the Fire Mages**: This mystical sanctuary lies in the island's southern reaches.
-- **Southforge**: A village for skilled craftsmen along the island's southern perimeter.
+- **Southforge**: A village for skilled craftsmen in the south of the island.
 - **Bonedune**: The hunters roam the island's expansive dunes, seeking bounty. Have their houses in the dunes in the north.
 - **Beachrobbers**: Reside in makeshift shelters assembled from seaside flotsam.
 - **Northhaven**: Viking stronghold encircled by stone, earth, and wooden defenses.
 - **Lokinax Tower (Evil Wizard's Tower)**: Looms on an isolated dune, serving as the final challenge.
 
 The anticipation builds as the hero seeks acceptance into the Viking fold, ultimately boarding their revered vessels. To achieve this, he must confront the evil wizard, seizing the coveted magical rune essential for integration into Viking society.
+The story is that there are no main quests. The player needs to get all 4 pieces of the puzzle to destroy the magical barrier around the tower of Lokinax. The player can always decide whether to get this piece of the puzzle by force or by getting on good terms with the faction and receiving it as a reward.
 
-For an extensive overview of Chapter 1, refer to *chapter-1 overview* (comming soon).
+For an extensive overview of Chapter 1, refer to [chapter-1 overview](story/chapter-1/overview.md).
 
 ### Chapter 2
 

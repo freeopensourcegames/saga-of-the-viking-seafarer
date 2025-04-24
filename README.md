@@ -84,6 +84,13 @@ This project thrives on collaboration! It’s still in its early days, which mea
 - Game designers (mechanics, balancing)  
 - Anyone with ideas or curiosity!
 
+_Current topics:_
+- Brainstorming for the story, quests, dialogues, etc. (That's why there are some brainstorming files in the docs folder currently :) )
+- Basic setup of the frontend and backend applications.
+- Preparing specifications to store the data (quests, dialogues, etc.)
+- Technical brainstorming about the setup (Backend, CDN, Database (e.g., MongoDB), handling updates in saved games, login, etc.)
+- **GOALS:** Prepare a solid foundation for the game and implement some initial steps.
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) to get started — even small ideas are meaningful at this stage.
 
 ---

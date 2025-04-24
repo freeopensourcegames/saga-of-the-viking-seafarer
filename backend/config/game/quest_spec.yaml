@@ -1,0 +1,233 @@
+openapi: 3.0.3
+info:
+  title: Quest Schema
+  version: 1.0.0
+  description: Schema for defining quests in the RPG
+
+components:
+  schemas:
+    CombatStep:
+      allOf:
+        - $ref: '#/components/schemas/QuestStep'
+        - type: object
+          properties:
+            target:
+              type: string
+              description: ID of the target object the player must engage in combat with.
+              example: animal_wolf
+            count:
+              type: integer
+              default: 1
+              example: 5
+          required:
+            - target
+
+    DialogueStep:
+      allOf:
+        - $ref: '#/components/schemas/QuestStep'
+        - type: object
+          properties:
+            npc:
+              type: string
+              description: ID of the NPC for the dialogue.
+              example: character_01
+            dialogue_id:
+              type: string
+              description: ID of the dialogue.
+              example: dialogue_character_01_intro
+          required:
+            - npc
+            - dialogue_id
+
+    FlagCondition:
+      allOf:
+        - $ref: '#/components/schemas/StepCondition'
+        - type: object
+          properties:
+            flag:
+              type: string
+              description: Flag condition that must be met.
+              example: player_met_character_01
+            value:
+              type: boolean
+              default: true
+              example: false
+          required:
+            - flag
+
+    HasItemCondition:
+      allOf:
+        - $ref: '#/components/schemas/StepCondition'
+        - type: object
+          properties:
+            item_id:
+              type: string
+              description: ID of the item the character needs to have.
+              example: magic_sword
+            count:
+              type: integer
+              default: 1
+              example: 1
+          required:
+            - item_id
+
+    ItemCollectionStep:
+      allOf:
+        - $ref: '#/components/schemas/QuestStep'
+        - type: object
+          properties:
+            item_id:
+              type: string
+              description: ID of the item that needs to be collected.
+              example: wolf_skins
+            count:
+              type: integer
+              default: 1
+              example: 5
+          required:
+            - item_id
+
+    LocalizedString:
+      type: object
+      description: Language map for text.
+      required:
+        - translation_key
+      properties:
+        translation_key:
+          type: string
+          description: The Symfony translation key to translate the message in the game.
+          example: chapter-1_main_quests_title_01-awaking
+        description:
+          type: string
+          description: Optional human-readable description for developers/tools.
+          example: Character awakes in a fisherman's house.
+
+    Quest:
+      type: object
+      required:
+        - id
+        - version
+        - giver
+        - title
+        - description
+        - steps
+        - rewards
+        - logEntry
+      properties:
+        id:
+          type: string
+          description: Unique quest identifier.
+          example: chapter-1_quest_main_01-awaking
+        version:
+          type: string
+          description: Version of the quest (for updates)
+          example: 1.0.0
+        giver:
+          type: string
+          description: NPC that gives the quest.
+          example: character_01
+        title:
+          $ref: '#/components/schemas/LocalizedString'
+        description:
+          $ref: '#/components/schemas/LocalizedString'
+        conditions:
+          type: array
+          description: Conditions for the quest to start.
+          items:
+            $ref: '#/components/schemas/StepCondition'
+        steps:
+          type: array
+          description: Ordered list of steps.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/CombatStep'
+              - $ref: '#/components/schemas/DialogueStep'
+              - $ref: '#/components/schemas/ItemCollectionStep'
+            discriminator:
+              propertyName: type
+              mapping:
+                combat: CombatStep
+                dialogue: DialogueStep
+                item_collection: ItemCollectionStep
+        rewards:
+          $ref: '#/components/schemas/Rewards'
+        logEntry:
+          type: string
+          description: Describe the quest for the logbook.
+
+    QuestStep:
+      type: object
+      required:
+        - id
+        - type
+      properties:
+        id:
+          type: string
+          description: Unique step identifier within a quest.
+          example: chapter-1_quest_main_01-awaking_step-01
+        type:
+          type: string
+          enum: [combat, dialogue, item_collection]
+          description: Identifier for the different types of steps.
+        logEntry:
+          type: string
+          description: Optional parameter, can be defined in relevant steps to add a meesage to the logbook.
+        requiredPreviousSteps:
+          type: array
+          description: Optional IDs of the steps that need to be completed before this step can be started.
+          items:
+            type: string
+            example: chapter-1_quest_main_01-awaking_step-01
+        conditions:
+          type: array
+          description: Conditions that must be satisfied to perform this step.
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/FlagCondition'
+              - $ref: '#/components/schemas/HasItemCondition'
+              - $ref: '#/components/schemas/QuestCompletedCondition'
+            discriminator:
+              propertyName: type
+              mapping:
+                flag: FlagCondition
+                has_item: HasItemCondition
+                quest_completed: QuestCompletedCondition
+      discriminator:
+        propertyName: type
+
+    StepCondition:
+      type: object
+      required:
+        - type
+      properties:
+        type:
+          type: string
+          enum: [flag, has_item, quest_completed]
+          description: Identifier of the type of condition.
+
+    QuestCompletedCondition:
+      allOf:
+        - $ref: '#/components/schemas/StepCondition'
+        - type: object
+          properties:
+            quest_id:
+              type: string
+              description: The ID of the quest that has to be completed.
+              example: chapter-1_quest_main_01-awaking
+          required:
+            - quest_id
+
+    Rewards:
+      type: object
+      description: Rewards given upon completing the quest.
+      properties:
+        experience:
+          type: integer
+          description: The experience the character receives for completing the quest.
+          example: 100
+        items:
+          type: array
+          description: List of item IDs that the user receives as rewards.
+          items:
+            type: string
+            example: magic_sword

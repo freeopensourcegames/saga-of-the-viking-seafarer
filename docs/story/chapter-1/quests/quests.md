@@ -1,0 +1,3 @@
+# Quests
+
+The general idea is to have no real "main" quests. Of course the final quest is to get the rune of Lokinax and bring it to the vikings to get access to the viking ships. But the whole story is about getting 4 puzzle pieces to destroy the magical barrier around the tower of Lokinax. You can always decide whether you want to get this piece of the puzzle by force or by getting on good terms with the faction and receiving it as a reward.
