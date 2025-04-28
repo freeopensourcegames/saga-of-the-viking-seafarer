@@ -1,6 +1,13 @@
 {
+    "name": "freeopensourcegames/saga-of-the-viking-seafarer",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Free OpenSource Games",
+            "email": "freeopensourcegames@gmail.com"
+        }
+    ],
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
@@ -12,9 +19,8 @@
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.2.*",
         "symfony/runtime": "7.2.*",
+        "symfony/translation": "7.2.*",
         "symfony/yaml": "7.2.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -27,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "FreeOpenSourceGames\\SOTVS\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "FreeOpenSourceGames\\SOTVS\\Tests\\": "tests/"
         }
     },
     "replace": {
@@ -65,5 +71,8 @@
             "allow-contrib": false,
             "require": "7.2.*"
         }
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.62"
     }
 }
