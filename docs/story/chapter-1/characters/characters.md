@@ -24,7 +24,7 @@ Hinrike (mistress of the house)
 - Hears a lot from her guests, knows many rumors
 - Open-hearted and talks a lot
 
-Arne (eagle)
+Arthur (the strong bear)
 - Boat builder in the shipyard
 - Has a lot of experience with building boats and working with wood
 
@@ -84,8 +84,8 @@ Fenja (the peaceful one, the beautiful one)
 - Plays the harp at the marketplace
 
 Lina (the gentle one, little angel)
-- Sells cotton fabrics at the marketplace
-- Gets her goods from Maike (Southforge) and the ships in the harbor in Stoneholm
+- Sells fabrics, pelts, ... at the marketplace on a rustic wooden stall
+- Gets her goods from Maike (Southforge, fabrics), Desche (Southforge, pelts) and the ships in the harbor in Stoneholm
 
 Jasper (the treasurer)
 - Treasurer for the mayor Tade
@@ -186,7 +186,7 @@ Itjen (the worker / the working one)
 
 Menno (the strong one)
 - Smith
-- Trainer to learn blacksmithing
+- Trainer to learn blacksmithing and lower strength levels
 
 Sjoerd (the protector)
 - Brewer
@@ -202,11 +202,11 @@ Desche (the brave)
 - Tanner
 - Works in the tannery in Southforge
 - Can train some basic skills in hunting and archery
-- Good friend of Broder, working hand in hand
+- Good friend of Broder
 
 Broder (brother)
-- Butcher
-- Gets animals from the large farmer and some hunters
+- Potter in a small pottery
+- nickname "Potter Theo"
 - Good friend of Desche, working hand in hand
 - Brother of Maike
 
@@ -216,6 +216,19 @@ Maike (the fertile)
 - Wife of Desche, has four kids
 - Sister of Broder
 - Works and takes care of the kids
+
+Hildrun (protector)
+- basket maker
+- Old woman working in a small house together with her sister Gesa
+
+Gesa (Spear strength)
+- Rope maker
+- Old woman working in a small house together with her sister Hildrun
+
+Arne (eagle)
+- beekeper
+- a bit strage person
+- living alone with his bees
 
 **Bonedune**
 
@@ -239,7 +252,7 @@ Fenna (the peace whisperer)
 - Brings Eira some ingredients for her potions
 - Establishes the connection between Eira and the Vikings
 
-**Beachrobbers**
+**Beach robbers**
 
 The pirate crew, based on the comic of Captain Redbeard, became stranded with their ship **The Black Day** (Black Falcon) on the treacherous sandbanks of Dune Island. They now need funds to build a new ship and cooperate with other beach robbers on the island. Over time, Captain Seafox became the leader of the beach robbers. He maintains a map of all their hidden treasures.
 
